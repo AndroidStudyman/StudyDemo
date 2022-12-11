@@ -4,8 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.LinearLayout
-import androidx.appcompat.widget.AppCompatImageView
+
 import androidx.fragment.app.FragmentTransaction
 import androidx.viewbinding.ViewBinding
 import com.example.myapplication.databinding.ActivityMainBinding
@@ -21,6 +20,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.vImageWeb.setOnClickListener {
             val intent = Intent(this, WebViewTest ::class.java)
+            startActivity(intent)
+        }
+        binding.vToImage.setOnClickListener {
+            val intent = Intent(this, SharedPreferencesDemo ::class.java)
             startActivity(intent)
         }
     }
