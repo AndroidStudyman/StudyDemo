@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         binding.vImageWeb.setOnClickListener {
 
         }
+
+        binding.withDraw.setOnClickListener {  }
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {

@@ -19,7 +19,8 @@
                 android:layout_width="16dp"
                 android:layout_height="match_parent"
                 android:src="@drawable/vector_arrow_back"
-                android:scaleType="fitCenter"/>
+                android:scaleType="fitCenter"
+                android:visibility="invisible"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
@@ -70,6 +71,7 @@
             android:src="@mipmap/ic_transfer"
             android:scaleType= "fitCenter"/>
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/withDraw"
             android:layout_width="0dp"
             android:layout_height="56dp"
             android:layout_weight="1"
