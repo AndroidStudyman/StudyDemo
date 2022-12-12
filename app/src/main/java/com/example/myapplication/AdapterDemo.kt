@@ -3,14 +3,12 @@ package com.example.myapplication
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.view.ViewParent
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.chad.library.adapter.base.BaseQuickAdapter
-import com.example.myapplication.databinding.ActivityAdapterDemoBinding
 import com.example.myapplication.databinding.LayoutPageAdapterDemoBinding
-import javax.net.ssl.SSLEngineResult.Status
 
-class AdapterDemo() : BaseQuickAdapter<ModelDemoItem, AdapterDemo.VH>() {
+class AdapterDemo : BaseQuickAdapter<ModelDemoItem, AdapterDemo.VH>() {
 
     //自定义ViewHolder类
     class VH(
@@ -27,6 +25,14 @@ class AdapterDemo() : BaseQuickAdapter<ModelDemoItem, AdapterDemo.VH>() {
 
     override fun onBindViewHolder(holder: VH, position: Int, item: ModelDemoItem?) {
         // 设置item数据
-        item?.getItemName()
+        val name = holder.itemView.findViewById<TextView>(R.id.vName)
+        if (item != null) {
+            name.text = item.name
+        }
+        val age = holder.itemView.findViewById<TextView>(R.id.vAge)
+        if (item != null) {
+            age.text = item.age.toString()
+        }
     }
+
 }
