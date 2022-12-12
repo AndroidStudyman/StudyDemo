@@ -55,5 +55,13 @@ class ActivityAdapterDemo : AppCompatActivity() {
 
         //item 子控件长按事件
         // 需要传递控件 id
+        adapterDemo.addOnItemChildLongClickListener(R.id.vAge) {  adapter, view, position ->
+            Log.i(tag, " addOnItemChildLongClickListener ${adapter.hashCode()}, ${view.tag}, $position ")
+            Toasty.info(
+                baseContext,
+                "addOnItemChildLongClickListener!!").show()
+            true
+
+        }
     }
 }
