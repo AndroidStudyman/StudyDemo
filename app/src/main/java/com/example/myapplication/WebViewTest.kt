@@ -53,7 +53,7 @@ class WebViewTest : AppCompatActivity() {
     }
 
     private fun loadWeb(){
-        binding.vWebView.loadUrl("https://juejin.cn/")
+        binding.vWebView.loadUrl("https://flutter.cn/")
     }
 
 
