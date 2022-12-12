@@ -7,16 +7,15 @@ import android.view.ViewParent
 import androidx.recyclerview.widget.RecyclerView
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.example.myapplication.databinding.ActivityAdapterDemoBinding
+import com.example.myapplication.databinding.LayoutPageAdapterDemoBinding
 import javax.net.ssl.SSLEngineResult.Status
 
-class AdapterDemo : BaseQuickAdapter<ModelDemoItem, AdapterDemo.VH>() {
-
-    lateinit var binding: ActivityAdapterDemoBinding
+class AdapterDemo() : BaseQuickAdapter<ModelDemoItem, AdapterDemo.VH>() {
 
     //自定义ViewHolder类
     class VH(
         parent: ViewGroup,
-        binding: ActivityAdapterDemoBinding = ActivityAdapterDemoBinding.inflate(
+        binding: LayoutPageAdapterDemoBinding = LayoutPageAdapterDemoBinding.inflate(
             LayoutInflater.from(parent.context), parent, false
         )
     ) : RecyclerView.ViewHolder(binding.root)

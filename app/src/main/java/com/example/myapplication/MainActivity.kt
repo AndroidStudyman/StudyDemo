@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -22,7 +23,11 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        binding.withDraw.setOnClickListener {  }
+        binding.withDraw.setOnClickListener {
+            val intent = Intent(this, ActivityAdapterDemo ::class.java)
+            intent.action = Intent.ACTION_VIEW
+            startActivity(intent)
+        }
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
