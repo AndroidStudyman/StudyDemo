@@ -93,7 +93,7 @@ class WebViewTest : AppCompatActivity() {
     }
 
     private fun loadWeb(){
-        binding.vWebView.loadUrl("https://flutter.cn/")
+        binding.vWebView.loadUrl("https://juejin.cn/user/1218729385924360")
     }
 
 

@@ -26,6 +26,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SharedPreferencesDemo ::class.java)
             startActivity(intent)
         }
+
+        binding.withDraw.setOnClickListener {
+            val intent = Intent(this, ActivityAdapterDemo ::class.java)
+            intent.action = Intent.ACTION_VIEW
+            startActivity(intent)
+        }
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
