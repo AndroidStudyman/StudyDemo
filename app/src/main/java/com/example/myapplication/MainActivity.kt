@@ -32,12 +32,6 @@ class MainActivity : AppCompatActivity() {
             intent.action = Intent.ACTION_VIEW
             startActivity(intent)
         }
-
-        binding.withDraw.setOnClickListener {
-            val intent = Intent(this, ActivityAdapterDemo ::class.java)
-            intent.action = Intent.ACTION_VIEW
-            startActivity(intent)
-        }
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
