@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.annotation.SuppressLint
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
@@ -35,6 +36,7 @@ class WebViewTest : AppCompatActivity() {
         super.onDestroy()
     }
 
+    @SuppressLint("SetJavaScriptEnabled")
     private fun initWeb() {
         //声明WebSettings子类
         val setting = binding.vWebView.settings
