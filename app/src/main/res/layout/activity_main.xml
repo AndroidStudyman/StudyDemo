@@ -54,6 +54,7 @@
         android:src="@mipmap/ic_play_demo"
         android:scaleType="center"/>
     <LinearLayout
+        android:id="@+id/vllFunction"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:orientation="horizontal">
