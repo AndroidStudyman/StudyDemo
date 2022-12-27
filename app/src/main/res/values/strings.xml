@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Study Center</string>
     <string name="title">Title</string>
     <string name="text1">1．可以弹出弹窗，且弹窗可以继续拉到顶部。</string>
     <string name="text2">2．禁止下拉关闭弹窗，使下滑到固定位置后不会再动，关闭弹窗使用关闭按钮。</string>
