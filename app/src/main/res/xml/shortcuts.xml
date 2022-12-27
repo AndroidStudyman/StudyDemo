@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/ic_shortcut_scan"
+        android:shortcutId="scan"
+        android:shortcutShortLabel="@string/scan">
+
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.example.myapplication.WebViewTest"
+            android:targetPackage="com.example.myapplication" />
+        <categories android:name="android.shortcut.conversation" />
+        <capability-binding android:key="actions.intent.SCAN" />
+    </shortcut>
+</shortcuts>
